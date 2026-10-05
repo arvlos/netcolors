@@ -1,0 +1,56 @@
+name: NetColors
+options:
+  bundleIdPrefix: com.artemlosev
+  deploymentTarget:
+    iOS: "18.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_IDENTITY: "Apple Development"
+    CODE_SIGN_STYLE: Automatic
+
+schemes:
+  NetColors:
+    build:
+      targets:
+        NetColors: all
+        NetColorsTests: [test]
+    test:
+      targets:
+        - NetColorsTests
+
+targets:
+  NetColors:
+    type: application
+    supportedDestinations: [iOS]
+    sources:
+      - path: NetColors
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.artemlosev.netcolors
+        INFOPLIST_FILE: NetColors/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: NetColors/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: NetColors
+        UILaunchScreen: {}
+        UIBackgroundModes: [fetch]
+        BGTaskSchedulerPermittedIdentifiers: [com.artemlosev.netcolors.refresh]
+
+  NetColorsTests:
+    type: bundle.unit-test
+    supportedDestinations: [iOS]
+    sources:
+      - path: NetColorsTests
+    dependencies:
+      - target: NetColors
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.artemlosev.netcolors.tests
+        GENERATE_INFOPLIST_FILE: true
