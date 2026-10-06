@@ -5,36 +5,45 @@ struct DiagnosticsView: View {
 
     var body: some View {
         NavigationStack {
-            List {
-                if engine.interpretations.isEmpty && engine.isRunning {
-                    HStack {
-                        Spacer()
-                        ProgressView(L10n.tr("Running checks…"))
-                        Spacer()
+            ScrollViewReader { proxy in
+                List {
+                    if engine.interpretations.isEmpty && engine.isRunning {
+                        HStack {
+                            Spacer()
+                            ProgressView(L10n.tr("Running checks…"))
+                            Spacer()
+                        }
+                        .listRowBackground(Color.clear)
                     }
-                    .listRowBackground(Color.clear)
-                }
 
-                ForEach(ProbeGroup.allCases, id: \.self) { group in
-                    let groupInterps = engine.interpretations.filter {
-                        $0.observation.endpoint.group == group
-                    }
-                    if !groupInterps.isEmpty {
-                        Section(group.title) {
-                            ForEach(groupInterps) { interp in
-                                ProbeRow(interpretation: interp)
+                    ForEach(ProbeGroup.allCases, id: \.self) { group in
+                        let groupInterps = engine.interpretations.filter {
+                            $0.observation.endpoint.group == group
+                        }
+                        if !groupInterps.isEmpty {
+                            Section(group.title) {
+                                ForEach(groupInterps) { interp in
+                                    ProbeRow(interpretation: interp)
+                                }
                             }
+                            .id(group)
                         }
                     }
-                }
 
-                if engine.interpretations.isEmpty && !engine.isRunning {
-                    ContentUnavailableView(
-                        L10n.tr("No Results"),
-                        systemImage: "antenna.radiowaves.left.and.right",
-                        description: Text(L10n.tr("Pull down or tap ▶ to run a check"))
-                    )
+                    if engine.interpretations.isEmpty && !engine.isRunning {
+                        ContentUnavailableView(
+                            L10n.tr("No Results"),
+                            systemImage: "antenna.radiowaves.left.and.right",
+                            description: Text(L10n.tr("Pull down or tap ▶ to run a check"))
+                        )
+                    }
                 }
+                #if DEBUG
+                .task {
+                    // App Store screenshots: start at the groups where requests fail.
+                    if ScreenshotDemo.isActive { proxy.scrollTo(ProbeGroup.usuallyAvailable, anchor: UnitPoint(x: 0.5, y: 0.3)) }
+                }
+                #endif
             }
             .navigationTitle(L10n.tr("Diagnostics"))
             .refreshable {

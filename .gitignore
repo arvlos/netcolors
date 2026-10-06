@@ -47,3 +47,6 @@ Pods/
 
 # Local agent instructions (not published)
 CLAUDE.md
+
+# App Store screenshots — regenerate with tools/capture_screenshots.py
+AppStore/screenshots/

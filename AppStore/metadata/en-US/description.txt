@@ -1,0 +1,28 @@
+NetColors shows, as a colour, how much of the internet is reachable from your connection right now.
+
+🟢 Full Access — all checked sites respond.
+🟠 Some Sites Unavailable — most sites work, some international services don't.
+🔴 Only Selected Services — only some Russian services respond, most other sites don't.
+⚫ No Internet — no site responds, including Russian ones.
+
+It is built for mobile networks in Russia, where access can change during the day and differ from one street to the next.
+
+HOW IT WORKS
+Each check sends ordinary HTTPS requests to 26 sites in four groups: DNS servers, whitelist services, and international sites that are usually available or usually unavailable on Russian networks. Which groups respond determines the mode.
+
+SEE WHERE IT STOPPED
+For every site that fails, NetColors shows the stage where the connection stopped — DNS, connection, secure handshake or mid-transfer — and how confident that conclusion is. Failed requests are compared with successful ones from the same check rather than with fixed thresholds, so the result holds up across networks and carriers.
+
+HISTORY AND ALERTS
+• History of checks for 7, 14 or 30 days
+• Background checks and a notification when access drops
+• A clear VPN on / off label
+
+PRIVATE BY DESIGN
+• No data collected: no account, no analytics, no ads, no location
+• Everything stays on your iPhone; history can be erased in Settings
+• Open source
+
+NetColors only checks availability. It does not change network settings, does not route your traffic and is not a VPN.
+
+Available in English and Russian.
