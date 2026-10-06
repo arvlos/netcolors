@@ -17,10 +17,10 @@ Keywords skip words already in the name and subtitle — the App Store indexes t
 | App Privacy | Data Not Collected |
 | Encryption | Standard HTTPS only — `ITSAppUsesNonExemptEncryption = NO` in `Info.plist` |
 | Devices | iPhone only (`TARGETED_DEVICE_FAMILY = 1`) |
-| Support URL | artemlosev.com page built from [`SUPPORT.md`](../SUPPORT.md) — not live yet |
-| Privacy Policy URL | artemlosev.com page built from [`PRIVACY.md`](../PRIVACY.md) — not live yet |
+| Support URL | https://artemlosev.com/en/netcolors/support (en-US), https://artemlosev.com/netcolors/support (ru) — built from [`SUPPORT.md`](../SUPPORT.md) |
+| Privacy Policy URL | https://artemlosev.com/en/netcolors/privacy (en-US), https://artemlosev.com/netcolors/privacy (ru) — built from [`PRIVACY.md`](../PRIVACY.md) |
 
-The description says "Open source": make the GitHub repository public no later than the release.
+The description says "Open source": the repository https://github.com/arvlos/netcolors is public from the day the site pages go live.
 
 ## Notes for App Review
 

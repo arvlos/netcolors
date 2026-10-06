@@ -8,7 +8,7 @@ each file has the English half first, then a line `---`, then the Russian half.
   `NetColors/Resources/AppIcon.icon` by Icon Composer (`iconmage render --rendition Default --width 1024 --height 1024`).
 - Screenshots: `AppStore/screenshots/{ru,en-US}/` after `python3 tools/capture_screenshots.py`, 1320 × 2868.
 - Subtitle (same as in the App Store): «Проверка связи в сетях России» / “Check network status in Russia”.
-- No GitHub link until the repository is public.
+- Source code: https://github.com/arvlos/netcolors — the repository opens together with the site pages, so the link works from day one.
 
 ## Русский
 
