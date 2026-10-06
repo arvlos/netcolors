@@ -21,7 +21,7 @@ each file has the English half first, then a line `---`, then the Russian half.
 **Как работает**
 1. **Четыре режима — четыре цвета.** Зелёный — полный доступ, оранжевый — часть сайтов недоступна, красный — только отдельные сервисы, чёрный — нет интернета.
 2. **26 сайтов за одну проверку.** DNS-серверы, белые списки и зарубежные сайты, обычно доступные и обычно недоступные в российских сетях. Режим определяется тем, какие группы отвечают.
-3. **Видно, где оборвалось.** Для каждого сайта, который не ответил, — этап, на котором остановилось соединение, и насколько уверен этот вывод.
+3. **Анализ причины поломки.** Для каждого сайта, который не ответил, — этап, на котором остановилось соединение, и насколько уверен этот вывод.
 4. **История и уведомления.** Проверки в фоне, уведомление, когда доступ ухудшается, и история за 7–30 дней.
 
 **Приватность (одна фраза)**
@@ -45,7 +45,7 @@ Mobile internet in Russia doesn't behave the same all day: sometimes everything 
 **How it works**
 1. **Four modes, four colours.** Green — full access, orange — some sites unavailable, red — only selected services, black — no internet.
 2. **26 sites in one check.** DNS servers, whitelist services, and international sites that are usually available or usually unavailable on Russian networks. Which groups respond determines the mode.
-3. **See where it stopped.** For every site that fails — the stage where the connection stopped, and how confident that conclusion is.
+3. **See the reason a site doesn't respond.** For every site that fails — the stage where the connection stopped, and how confident that conclusion is.
 4. **History and alerts.** Background checks, a notification when access drops, and 7–30 days of history.
 
 **Privacy (one sentence)**

@@ -2,7 +2,9 @@
 
 _Effective 6 October 2026_
 
-NetColors is made by Artem Losev, an individual developer. This policy explains what the app does with data. In short: **the developer collects nothing.**
+NetColors is made by Artem Losev, an individual developer. This policy explains what the app does with data.
+
+In short: **the developer collects nothing.**
 
 ## What the developer collects
 
@@ -45,7 +47,9 @@ netcolors@artemlosev.com
 
 _Действует с 6 октября 2026 года_
 
-NetColors делает Артём Лосев, частный разработчик. Здесь описано, что приложение делает с данными. Коротко: **разработчик ничего не собирает.**
+NetColors разработал Артём Лосев, частный разработчик. Здесь описано, что приложение делает с данными.
+
+Коротко: **разработчик ничего не собирает.**
 
 ## Что собирает разработчик
 

@@ -7,10 +7,10 @@ NetColors shows, as a colour, how much of the internet is reachable from your iP
 ## Questions
 
 **What do the colours mean?**
-Green — Full Access: all checked sites respond. Orange — Some Sites Unavailable: most sites work, some international services don't. Red — Only Selected Services: only some Russian services respond. Black — No Internet: no site responds.
-
-**Why does it show Full Access when my VPN is on?**
-With a VPN, requests go through the VPN, so sites that don't open directly can respond. The status screen shows whether a VPN is on.
+- Green — Full Access: all checked sites respond.
+- Orange — Some Sites Unavailable: most sites work, some international services don't.
+- Red — Only Selected Services: only some Russian services respond.
+- Black — No Internet: no site responds.
 
 **Does it work on Wi-Fi?**
 Yes, it checks any connection. The Only Selected Services mode usually appears on mobile networks.
@@ -40,13 +40,13 @@ NetColors показывает цветом, насколько доступен
 ## Вопросы
 
 **Что означают цвета?**
-Зелёный — «Полный доступ»: все проверяемые сайты отвечают. Оранжевый — «Часть сайтов недоступна»: большинство сайтов работает, часть зарубежных сервисов нет. Красный — «Только отдельные сервисы»: отвечают только отдельные российские сервисы. Чёрный — «Нет интернета»: не отвечает ни один сайт.
-
-**Почему при включённом VPN показан полный доступ?**
-С VPN запросы идут через него, поэтому отвечают и те сайты, которые напрямую не открываются. Включён ли VPN, видно на главном экране.
+- Зелёный — «Полный доступ»: все проверяемые сайты отвечают.
+- Оранжевый — «Часть сайтов недоступна»: большинство сайтов работает, часть зарубежных сервисов нет.
+- Красный — «Только отдельные сервисы»: отвечают только отдельные российские сервисы.
+- Чёрный — «Нет интернета»: не отвечает ни один сайт.
 
 **Работает ли по Wi-Fi?**
-Да, проверяется любое подключение. Режим «Только отдельные сервисы» обычно встречается в мобильных сетях.
+Да, проверяется любое подключение. Статус «Только отдельные сервисы» обычно встречается в мобильных сетях.
 
 **NetColors — это VPN? Он меняет мои настройки?**
 Нет. Приложение только проверяет доступность: не меняет настройки сети и не перенаправляет трафик.
