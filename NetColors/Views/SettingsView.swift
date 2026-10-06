@@ -14,6 +14,8 @@ struct SettingsView: View {
     @State private var showEraseSuccess = false
     @State private var exportFileURL: URL?
     @State private var showExportShare = false
+    @State private var showMailFallback = false
+    @Environment(\.openURL) private var openURL
 
     var body: some View {
         NavigationStack {
@@ -64,12 +66,16 @@ struct SettingsView: View {
                         MethodologyView()
                     }
 
+                    Button(L10n.tr("Write to the Developer")) {
+                        writeToDeveloper()
+                    }
+
                     Button(L10n.tr("Export Data (JSON)")) {
                         exportData()
                     }
                     .disabled(allSnapshots.isEmpty)
 
-                    LabeledContent(L10n.tr("Version"), value: "0.1.0")
+                    LabeledContent(L10n.tr("Version"), value: Feedback.appVersion)
                 }
             }
             .navigationTitle(L10n.tr("Settings"))
@@ -85,11 +91,30 @@ struct SettingsView: View {
             .alert(L10n.tr("All data erased"), isPresented: $showEraseSuccess) {
                 Button(L10n.tr("OK")) {}
             }
+            .alert(L10n.tr("Mail is not set up"), isPresented: $showMailFallback) {
+                Button(L10n.tr("Copy Address")) {
+                    UIPasteboard.general.string = Feedback.address
+                }
+                Button(L10n.tr("OK"), role: .cancel) {}
+            } message: {
+                Text(L10n.tr("Write to %@", Feedback.address))
+            }
             .sheet(isPresented: $showExportShare) {
                 if let url = exportFileURL {
                     ShareSheet(activityItems: [url])
                 }
             }
+        }
+    }
+
+    /// Opens a prepared e-mail; without a mail app, shows the address to copy instead.
+    private func writeToDeveloper() {
+        guard let url = Feedback.mailURL() else {
+            showMailFallback = true
+            return
+        }
+        openURL(url) { accepted in
+            if !accepted { showMailFallback = true }
         }
     }
 
