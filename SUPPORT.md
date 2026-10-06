@@ -22,7 +22,7 @@ No. It only checks availability: it does not change network settings and does no
 When iOS allows it, roughly every 10–60 minutes. A notification comes only when access drops; turning a VPN on or off doesn't trigger one.
 
 **What data does it collect?**
-None. History stays on your iPhone. See the [privacy policy](PRIVACY.md).
+None. History stays on your iPhone. See the [privacy policy](https://artemlosev.com/en/netcolors/privacy/).
 
 **How do I delete my data?**
 Settings → Erase All Data, or delete the app.
@@ -55,7 +55,7 @@ NetColors показывает цветом, насколько доступен
 Когда позволяет iOS, примерно раз в 10–60 минут. Уведомление приходит, только когда доступ ухудшается; включение и выключение VPN уведомлений не вызывает.
 
 **Какие данные собираются?**
-Никакие. История хранится на вашем iPhone. Подробнее — в [политике конфиденциальности](PRIVACY.md).
+Никакие. История хранится на вашем iPhone. Подробнее — в [политике конфиденциальности](https://artemlosev.com/netcolors/privacy/).
 
 **Как удалить данные?**
 «Настройки → Стереть все данные» или удалите приложение.
