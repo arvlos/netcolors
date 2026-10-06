@@ -17,8 +17,8 @@ Keywords skip words already in the name and subtitle — the App Store indexes t
 | App Privacy | Data Not Collected |
 | Encryption | Standard HTTPS only — `ITSAppUsesNonExemptEncryption = NO` in `Info.plist` |
 | Devices | iPhone only (`TARGETED_DEVICE_FAMILY = 1`) |
-| Support URL | to be published on artemlosev.com |
-| Privacy Policy URL | to be published on artemlosev.com |
+| Support URL | artemlosev.com page built from [`SUPPORT.md`](../SUPPORT.md) — not live yet |
+| Privacy Policy URL | artemlosev.com page built from [`PRIVACY.md`](../PRIVACY.md) — not live yet |
 
 The description says "Open source": make the GitHub repository public no later than the release.
 
