@@ -18,12 +18,12 @@ DERIVED = ROOT / "build/screenshots"
 BUNDLE_ID = "com.artemlosev.netcolors"
 DEVICE = "iPhone 17 Pro Max"
 
-SHOTS = [  # file name, demo mode, tab
-    ("01_status", "whitelist", "status"),
-    ("02_diagnostics", "whitelist", "diagnostics"),
-    ("03_history", "restricted", "history"),
-    ("04_how_it_works", "whitelist", "howitworks"),
-    ("05_full_access", "unrestricted", "status"),
+SHOTS = [  # file name, demo mode, tab — in App Store order
+    ("01_full_access", "unrestricted", "status"),
+    ("02_selected_services", "whitelist", "status"),
+    ("03_diagnostics", "whitelist", "diagnostics"),
+    ("04_history", "restricted", "history"),
+    ("05_how_it_works", "whitelist", "howitworks"),
 ]
 LOCALES = {"en-US": ("en", "en_US"), "ru": ("ru", "ru_RU")}
 

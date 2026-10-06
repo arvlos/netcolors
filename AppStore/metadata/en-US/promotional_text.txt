@@ -1,1 +1,1 @@
-Is it your connection or just some sites? One check shows the current internet mode as a colour — and where each failed request stopped.
+One tap checks 26 sites and shows, as a colour, what your internet can reach right now: everything, most sites, only selected services or nothing.
