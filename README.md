@@ -38,6 +38,8 @@ xcodegen generate
 open NetColors.xcodeproj
 ```
 
+The app icon is an Icon Composer document generated from code: `python3 tools/make_app_icon.py` rewrites `NetColors/Resources/AppIcon.icon`.
+
 To run on a device, choose your team in Signing & Capabilities. Tests:
 
 ```bash
